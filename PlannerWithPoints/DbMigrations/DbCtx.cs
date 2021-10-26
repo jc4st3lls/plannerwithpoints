@@ -15,10 +15,15 @@ namespace DbMigrations
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //if (!optionsBuilder.IsConfigured)
+            //{
+            //    optionsBuilder.UseSqlServer("Server=MINOS.althaia.cat\\APPs;Database=PWP;User Id=pwp;Password=@pocpwp;",
+            //        x => x.UseNetTopologySuite() );
+            //}
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=MINOS.althaia.cat\\APPs;Database=PWP;User Id=pwp;Password=@pocpwp;",
-                    x => x.UseNetTopologySuite() );
+                optionsBuilder.UseSqlServer("Server=localhost;Database=PWP;User Id=sa;Password=@thisIsAp0c",
+                    x => x.UseNetTopologySuite());
             }
         }
 
@@ -33,9 +38,12 @@ namespace DbMigrations
                 entity.Property(e => e.Agenda).IsRequired().HasMaxLength(10);
                 entity.Property(e => e.DataInici).IsRequired().HasColumnType("date");
                 entity.Property(e => e.HoraInici).IsRequired().HasColumnType("time");
+                entity.Property(e => e.HoraFi).IsRequired().HasColumnType("time");
+
                 entity.Property(e => e.Minuts).IsRequired();
                 entity.Property(e => e.PuntInici).IsRequired().HasColumnType("geometry");
                 entity.Property(e => e.PuntFi).IsRequired().HasColumnType("geometry"); ;
+               
 
 
 

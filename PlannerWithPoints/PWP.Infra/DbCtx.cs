@@ -33,9 +33,13 @@ namespace PWP.Infra
                 entity.Property(e => e.Agenda).IsRequired().HasMaxLength(10);
                 entity.Property(e => e.DataInici).IsRequired().HasColumnType("date");
                 entity.Property(e => e.HoraInici).IsRequired().HasColumnType("time");
+                entity.Property(e => e.HoraFi).IsRequired().HasColumnType("time");
+
                 entity.Property(e => e.Minuts).IsRequired();
                 entity.Property(e => e.PuntInici).IsRequired().HasColumnType("geometry");
                 entity.Property(e => e.PuntFi).IsRequired().HasColumnType("geometry"); ;
+               
+
 
 
 

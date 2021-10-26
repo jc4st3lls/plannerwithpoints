@@ -9,10 +9,10 @@ namespace PWP.Domain
         public string Agenda { get; set; }
         public DateTime DataInici { get; set; }
         public TimeSpan HoraInici { get; set; }
+        public TimeSpan HoraFi { get; set; }
         public int Minuts { get; set; }
         public Point PuntInici { get; set; }
         public Point PuntFi { get; set; }
-
        
     }
 }
