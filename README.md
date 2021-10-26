@@ -27,4 +27,8 @@ Tot seguit obrim un terminal i anem a la carpeta on hem descarregat el codi. Ens
 
 ``dotnet ef database update``
 
-Ara carreguem la solució, i anem al projecte PWPConsole
+Ara carreguem la solució, i anem al projecte PWPConsole. Dins la classe Program.cs, dins el Main, descomentem la crida al metode  **PopulateDb();** i executem.
+
+Tot seguit comentem aquest mètode i descomentem els dels testos, i executem. Podrem veure els resultats.
+
+Seguidament, podem fer més testos, afegir més agendes, més diataris, etc.
