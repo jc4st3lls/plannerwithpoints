@@ -8,3 +8,23 @@ Com a exemple,  imaginem que hem de donar cites a un pacient d’un hospital per
 Primer de tot desplegarem un contenidor docker amb SQL Server 2019 per linux
 
 ``docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=@thisIsAp0c" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest ``
+
+Tot seguit entrem al contenidor i executem 
+
+``/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P @thisIsAp0c``
+
+``CREATE DATABASE PWP``
+
+``GO``
+
+``USE PWP``
+
+``GO``
+
+Tot seguit obrim un terminal i anem a la carpeta on hem descarregat el codi. Ens posicionem dins la carpeta del projecte DbMigrations. Executem:
+
+``dotnet ef migrations add InitialCreate``
+
+``dotnet ef database update``
+
+Ara carreguem la solució, i anem al projecte PWPConsole
