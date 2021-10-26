@@ -23,7 +23,7 @@ namespace PWPConsole
 
             //Test1_FirstPlanner();
             //Test2_SecondPlanner_NotOrdened();
-            Test3_ThirdPlanner_MoreThanOne();
+            //Test3_ThirdPlanner_MoreThanOne();
 
             Console.WriteLine("Fi");
             
