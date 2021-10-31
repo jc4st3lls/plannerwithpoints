@@ -451,9 +451,9 @@ namespace PWPConsole
             var diataridatahora = new DateTime(2021, 10, 10, 8, 0, 0);
             var minuts = 20;
             var startX = new DateTime(2021, 10, 10, 0, 0, 0).Ticks / div;
-            var startY = (60 * oneminute * 8) / div;
+            var startY = (60 * oneminute * 8);
             var endX = startX;
-            var endY = startY + ((minuts * oneminute) / div);
+            var endY = startY + (minuts * oneminute) ;
 
             var dts = diataridatahora.ToString("yyyy/MM/dd HH:mm");
             Console.WriteLine($"Diatari data hora: {dts}");

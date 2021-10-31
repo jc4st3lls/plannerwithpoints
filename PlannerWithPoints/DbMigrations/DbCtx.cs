@@ -15,11 +15,7 @@ namespace DbMigrations
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //if (!optionsBuilder.IsConfigured)
-            //{
-            //    optionsBuilder.UseSqlServer("Server=MINOS.althaia.cat\\APPs;Database=PWP;User Id=pwp;Password=@pocpwp;",
-            //        x => x.UseNetTopologySuite() );
-            //}
+            
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Server=localhost;Database=PWP;User Id=sa;Password=@thisIsAp0c",
