@@ -33,3 +33,8 @@ Ara carreguem la solució, i anem al projecte PWPConsole. Dins la classe Program
 Tot seguit comentem aquest mètode i descomentem els dels testos, i executem. Podrem veure els resultats.
 
 Seguidament, podem fer més testos, afegir més agendes, més diataris, etc.
+
+
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/jcastellsgH)
+
